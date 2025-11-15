@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domaine du Lendemain</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        font-family: "Georgia", serif;
+        background-color: #e7dfd4;
+        color: #4a3b2f;
+        line-height: 1.6;
+      }
+
+      .main-frame {
+        max-width: 1100px;
+        margin: 0 auto;
+        background-color: #f8f6f2;
+        border: 3px solid #7a5638;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(74, 59, 47, 0.15);
+        overflow: hidden;
+      }
+
+      .inner-padding {
+        padding: 40px;
+      }
+
+      header {
+        text-align: center;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #e7dfd4;
+      }
+
+      header img.logo {
+        max-width: 220px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin: 10px 0;
+        color: #7a5638;
+      }
+
+      h2 {
+        font-size: 1.8em;
+        color: #7a5638;
+        text-align: left;
+        position: relative;
+      }
+
+      h2::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 3px;
+        background: #7a5638;
+      }
+
+      h3 {
+        text-align: center;
+        color: #4a3b2f;
+      }
+
+      .section {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      .hero-photo {
+        width: 100%;
+        max-height: 420px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin: 30px 0;
+        border: 2px solid #d4c4b0;
+      }
+
+      footer {
+        text-align: center;
+        padding: 30px;
+        background: #e7dfd4;
+        margin-top: 40px;
+        color: #7a5638;
+        font-size: 0.95em;
+      }
+
+      a {
+        color: #7a5638;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: #4a3b2f;
+      }
+
+      .btn-reserve {
+        display: inline-block;
+        padding: 12px 24px;
+        background: #7a5638;
+        color: white !important;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 1.1em;
+        transition: all 0.3s ease;
+      }
+
+      .btn-reserve:hover {
+        background: #5a4028;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(122, 86, 56, 0.3);
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 10px;
+        }
+
+        .inner-padding {
+          padding: 20px;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        h2 {
+          font-size: 1.5em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-frame">
+      <div class="inner-padding">
+        <header>
+          <img
+            src="logo-domaine-du-lendemain.jpg"
+            alt="Logo Domaine du Lendemain"
+            class="logo"
+          />
+          <h1>Domaine du Lendemain</h1>
+          <p>Herbaliste & Vigneronne en Roussillon</p>
+        </header>
+
+        <section class="section" id="histoire">
+          <h2>Histoire</h2>
+          <p>
+            J'ai laissé enfin s'exprimer le gène familial de vigneron en 2018
+            avec la création du Domaine du Lendemain. En 2017, je prélevais déjà
+            du raisin sur le domaine de mon père pour démarrer de futures cuvées
+            puis j'ai eu l'opportunité de sauver 2 ha de très vieilles vignes de
+            Grenache gris et blanc plantées en 1900.
+          </p>
+          <p>
+            En 2019, 3 ha de Carignan, Lledoner pelut et un brin de Muscat
+            petits grains viennent compléter l'encépagement. Les premières
+            cuvées Jeune Pousse 18 et Petit Bourgeon 19 voient le jour, des noms
+            inspirés de la phytothérapie et synonymes de régénérescence.
+          </p>
+          <p>
+            En 2020, mon père Bruno Ribière me rejoint après 30 ans de pratique
+            sur son domaine, partageant la même envie de faire des vins libres,
+            des vins qui nous ressemblent. Aujourd'hui, 8 hectares sont en
+            production avec des rendements faibles mais riches en personnalité.
+          </p>
+          <img
+            src="domaine-du-lendemain.jpg"
+            alt="La vigneronne et son père"
+            class="hero-photo"
+          />
+          <p>
+            Issue d'une famille où l'on travaille la terre depuis plusieurs
+            générations, j'ai appris très tôt l'importance des cycles lunaires,
+            des plantes, des minéraux et de l'observation. Diplômée Herbaliste
+            en 2020 après 3 ans d'école, j'ai également développé une petite
+            distillerie d'huiles essentielles et d'hydrolats.
+          </p>
+          <p>
+            Préserver les vieilles vignes, replanter des friches familiales,
+            créer des haies nourricières… Le Domaine du Lendemain est un travail
+            d'héritage, de soin et de transmission.
+          </p>
+        </section>
+
+        <section class="section" id="terroirs">
+          <h2>Terroirs</h2>
+          <p>
+            Situé en Roussillon, à 15 km au sud de Perpignan, le domaine s'étend
+            sur le terroir des Aspres, un paysage où la chaîne pyrénéenne
+            rencontre la Méditerranée. Collines verdoyantes, terre rouge et ocre
+            : ce décor unique façonne des vins de caractère.
+          </p>
+          <p>
+            Les sols y sont variés : limono-argileux, argilo-caillouteux,
+            schistes, quartz, calcaire… Les terrasses alluviales pyrénéennes
+            apportent fraîcheur et pureté.
+          </p>
+          <p>
+            La tramontane, vent emblématique de la région, assainit et protège
+            les vignes tout au long de l'année. Un climat sec, lumineux, venteux
+            : les conditions idéales pour cultiver des cépages typiques du
+            Roussillon.
+          </p>
+        </section>
+
+        <section class="section" id="cepages">
+          <h2>Cépages</h2>
+          <p>
+            Le domaine cultive notamment du Grenache gris et blanc planté en
+            1900, du Carignan, du Lledoner pelut, de la Syrah, du Muscat petits
+            grains et du Mataro. Des cépages historiques, enracinés dans le
+            patrimoine catalan.
+          </p>
+        </section>
+
+        <section class="section" id="engagements">
+          <h2>Engagements</h2>
+          <p>
+            Le travail de la vigne privilégie l'observation et le respect du
+            vivant : sols couverts, enherbement maîtrisé, tisanes de plantes,
+            huiles essentielles, apports de basalte riche en magnésium…
+          </p>
+          <p>
+            Les vendanges sont manuelles, les vinifications se font
+            naturellement, par gravité, avec une hygiène rigoureuse et un suivi
+            sensoriel constant. Chaque millésime est unique.
+          </p>
+        </section>
+
+        <section class="section" id="contact">
+          <h2>Contact</h2>
+          <p>Pour toute question, visite ou demande d'information :</p>
+          <p style="text-align: center; font-size: 1.2em">
+            <a href="mailto:contact@domainedulendemain.fr"
+              >contact@domainedulendemain.fr</a
+            >
+          </p>
+        </section>
+
+        <section class="section" id="reserver">
+          <h2>Réserver</h2>
+          <p>
+            Retrouvez toutes les expériences et possibilités de réservation
+            proposées par le Domaine du Lendemain sur Viny'aquí.
+          </p>
+          <p style="text-align: center; margin-top: 20px">
+            <a
+              href="https://vinyaqui.com/st_activity/visite-dans-les-vignes-et-degustation-de-vins-biodynamiques/"
+              target="_blank"
+              class="btn-reserve"
+              >Réserver une expérience</a
+            >
+          </p>
+        </section>
+
+        <footer>© Domaine du Lendemain — Roussillon</footer>
+      </div>
+    </div>
+  </body>
+</html>
