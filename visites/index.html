@@ -1,634 +1,608 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/svg+xml" href="../img/favicon/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png" />
-    <link rel="shortcut icon" href="../img/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Domaine du Lendemain" />
-    <link rel="manifest" href="../img/favicon/site.webmanifest" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Visites & dégustations vins biodynamiques · Domaine du Lendemain</title>
-    <meta
-      name="description"
-      content="Réservez votre visite-dégustation au Domaine du Lendemain à Fourques (Roussillon). Vignes, plantes médicinales, biodynamie. 4 vins commentés. Dès 15€."
-    />
-    <meta name="author" content="Mireille Ribière" />
-    <link rel="canonical" href="https://domainedulendemain.com/visites/" />
+  <link rel="icon" type="image/svg+xml" href="../img/favicon/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png" />
+  <link rel="shortcut icon" href="../img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Domaine du Lendemain" />
+  <link rel="manifest" href="../img/favicon/site.webmanifest" />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Visites & dégustations · Domaine du Lendemain" />
-    <meta
-      property="og:description"
-      content="Une visite-dégustation au cœur des Aspres : vignes, biodynamie, plantes médicinales et 4 cuvées commentées."
-    />
-    <meta property="og:image" content="https://domainedulendemain.com/img/vignes.webp" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:url" content="https://domainedulendemain.com/visites/" />
+  <title>Visites & dégustations vins biodynamiques · Domaine du Lendemain</title>
+  <meta name="description"
+    content="Réservez votre visite-dégustation au Domaine du Lendemain à Fourques (Roussillon). Vignes, plantes médicinales, biodynamie. 4 vins commentés. Dès 15€." />
+  <meta name="author" content="Mireille Ribière" />
+  <link rel="canonical" href="https://domainedulendemain.com/visites/" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Raleway:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Visites & dégustations · Domaine du Lendemain" />
+  <meta property="og:description"
+    content="Une visite-dégustation au cœur des Aspres : vignes, biodynamie, plantes médicinales et 4 cuvées commentées." />
+  <meta property="og:image" content="https://domainedulendemain.com/img/vignes.webp" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://domainedulendemain.com/visites/" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              terre: {
-                50: "#faf7f1",
-                100: "#f1ebe0",
-                200: "#e7dfd4",
-                300: "#d4c4b0",
-                400: "#b59880",
-                500: "#9a7758",
-                600: "#7a5638",
-                700: "#5a4028",
-                800: "#3d2c1c",
-                900: "#22180f",
-              },
-              vigne: {
-                400: "#a8693a",
-                500: "#8a4f2a",
-                600: "#6b3b1f",
-              },
-              feuille: {
-                500: "#6b7a4f",
-                600: "#525e3c",
-              },
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            terre: {
+              50: "#faf7f1",
+              100: "#f1ebe0",
+              200: "#e7dfd4",
+              300: "#d4c4b0",
+              400: "#b59880",
+              500: "#9a7758",
+              600: "#7a5638",
+              700: "#5a4028",
+              800: "#3d2c1c",
+              900: "#22180f",
             },
-            fontFamily: {
-              serif: ['"Averia Serif Libre"', "Georgia", "serif"],
-              sans: ['"Raleway"', "system-ui", "sans-serif"],
+            vigne: {
+              400: "#a8693a",
+              500: "#8a4f2a",
+              600: "#6b3b1f",
+            },
+            feuille: {
+              500: "#6b7a4f",
+              600: "#525e3c",
             },
           },
+          fontFamily: {
+            serif: ['"Averia Serif Libre"', "Georgia", "serif"],
+            sans: ['"Raleway"', "system-ui", "sans-serif"],
+          },
         },
-      };
-    </script>
+      },
+    };
+  </script>
 
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        font-family: "Raleway", system-ui, sans-serif;
-        font-weight: 400;
-      }
-      h1,
-      h2,
-      h3,
-      .serif {
-        font-family: "Averia Serif Libre", Georgia, serif;
-        font-weight: 400;
-      }
-      .section-title::after {
-        content: "";
-        display: block;
-        width: 60px;
-        height: 2px;
-        background: #7a5638;
-        margin-top: 14px;
-      }
-      .section-title.center::after {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .fade-in {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.9s ease, transform 0.9s ease;
-      }
-      .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .nav-link {
-        position: relative;
-      }
-      .nav-link::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -4px;
-        height: 1px;
-        background: #7a5638;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.3s ease;
-      }
-      .nav-link:hover::after,
-      .nav-link.is-active::after {
-        transform: scaleX(1);
-      }
-      .grain {
-        background-image: radial-gradient(
-            rgba(122, 86, 56, 0.06) 1px,
-            transparent 1px
-          ),
-          radial-gradient(rgba(122, 86, 56, 0.04) 1px, transparent 1px);
-        background-size: 12px 12px, 18px 18px;
-        background-position: 0 0, 6px 6px;
-      }
-      .vinyaqui-wrap {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      #vinyaqui-widget {
-        margin: 0 auto;
-      }
-      #vinyaqui-widget .vw-widget {
-        --vw-primary:      #7a5638;
-        --vw-primary-hover:#5a4028;
-        --vw-primary-light:#f1ebe0;
-        --vw-text:         #3d2c1c;
-        --vw-text-muted:   #9a7758;
-        --vw-border:       #e7dfd4;
-        --vw-radius:       0.75rem;
-        --vw-radius-sm:    0.375rem;
-        --vw-font:         "Raleway", system-ui, sans-serif;
-        --vw-shadow:       0 4px 6px rgba(0,0,0,.07);
-      }
-      .vinyaqui-backlink {
-        display: inline-block;
-        margin-top: 1rem;
-        font-size: 0.85rem;
-        color: #7a5638;
-        text-decoration: underline;
-      }
-      .vinyaqui-backlink:hover {
-        color: #5a4028;
-      }
-    </style>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6D0EYG8Q0G"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-6D0EYG8Q0G");
-    </script>
-  </head>
-  <body class="bg-terre-100 text-terre-800">
-    <!-- NAV -->
-    <header
-      class="fixed top-0 left-0 right-0 z-50 bg-terre-50/85 backdrop-blur border-b border-terre-200"
-    >
-      <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between">
-        <a href="/" class="flex items-center gap-3">
-          <img
-            src="/logo-domaine-du-lendemain.jpg"
-            alt="Domaine du Lendemain"
-            class="h-10 w-10 rounded-full object-cover border border-terre-300"
-          />
-          <span class="serif text-terre-700 text-xl leading-tight">
-            Domaine du Lendemain
-          </span>
-        </a>
-        <nav class="hidden lg:flex items-center gap-7 text-sm tracking-wide text-terre-700">
-          <a href="/#domaine" class="nav-link">Le Domaine</a>
-          <a href="/#engagements" class="nav-link">Nos Engagements</a>
-          <div class="relative group">
-            <button class="nav-link inline-flex items-center gap-1">
-              Nos Produits
-              <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="absolute left-0 top-full pt-3 hidden group-hover:block">
-              <div class="bg-terre-50 border border-terre-200 rounded-lg shadow-lg py-2 min-w-[220px]">
-                <a href="/#vins" class="block px-5 py-2 hover:bg-terre-100">Nos Vins</a>
-                <a href="/#huile" class="block px-5 py-2 hover:bg-terre-100">Notre Huile d'olive</a>
-              </div>
+    body {
+      font-family: "Raleway", system-ui, sans-serif;
+      font-weight: 400;
+    }
+
+    h1,
+    h2,
+    h3,
+    .serif {
+      font-family: "Averia Serif Libre", Georgia, serif;
+      font-weight: 400;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      background: #7a5638;
+      margin-top: 14px;
+    }
+
+    .section-title.center::after {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -4px;
+      height: 1px;
+      background: #7a5638;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.is-active::after {
+      transform: scaleX(1);
+    }
+
+    .grain {
+      background-image: radial-gradient(rgba(122, 86, 56, 0.06) 1px,
+          transparent 1px),
+        radial-gradient(rgba(122, 86, 56, 0.04) 1px, transparent 1px);
+      background-size: 12px 12px, 18px 18px;
+      background-position: 0 0, 6px 6px;
+    }
+
+    .vinyaqui-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    #vinyaqui-widget {
+      margin: 0 auto;
+    }
+
+    #vinyaqui-widget .vw-widget {
+      --vw-primary: #7a5638;
+      --vw-primary-hover: #5a4028;
+      --vw-primary-light: #f1ebe0;
+      --vw-text: #3d2c1c;
+      --vw-text-muted: #9a7758;
+      --vw-border: #e7dfd4;
+      --vw-radius: 0.75rem;
+      --vw-radius-sm: 0.375rem;
+      --vw-font: "Raleway", system-ui, sans-serif;
+      --vw-shadow: 0 4px 6px rgba(0, 0, 0, .07);
+    }
+
+    .vinyaqui-backlink {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: #7a5638;
+      text-decoration: underline;
+    }
+
+    .vinyaqui-backlink:hover {
+      color: #5a4028;
+    }
+  </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6D0EYG8Q0G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-6D0EYG8Q0G");
+  </script>
+</head>
+
+<body class="bg-terre-100 text-terre-800">
+  <!-- NAV -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-terre-50/85 backdrop-blur border-b border-terre-200">
+    <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <img src="/logo-domaine-du-lendemain.jpg" alt="Domaine du Lendemain"
+          class="h-10 w-10 rounded-full object-cover border border-terre-300" />
+        <span class="serif text-terre-700 text-xl leading-tight">
+          Domaine du Lendemain
+        </span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-sm tracking-wide text-terre-700">
+        <a href="/#domaine" class="nav-link">Le Domaine</a>
+        <a href="/#engagements" class="nav-link">Nos Engagements</a>
+        <div class="relative group">
+          <button class="nav-link inline-flex items-center gap-1">
+            Nos Produits
+            <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="absolute left-0 top-full pt-3 hidden group-hover:block">
+            <div class="bg-terre-50 border border-terre-200 rounded-lg shadow-lg py-2 min-w-[220px]">
+              <a href="/#vins" class="block px-5 py-2 hover:bg-terre-100">Nos Vins</a>
+              <a href="/#huile" class="block px-5 py-2 hover:bg-terre-100">Notre Huile d'olive</a>
             </div>
           </div>
-          <a href="/#rencontrer" class="nav-link">Nous Rencontrer</a>
-          <a href="/visites/" class="nav-link is-active" aria-current="page">Visites</a>
-          <a
-            href="https://commande.kuupanda.com/producteur/4079/particulier"
-            target="_blank"
-            rel="noopener"
-            class="bg-terre-600 hover:bg-terre-700 text-terre-50 px-4 py-2 rounded-full transition"
-            >Boutique</a
-          >
-        </nav>
-        <button
-          id="mobile-toggle"
-          class="lg:hidden text-terre-700"
-          aria-label="Menu"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
+        </div>
+        <a href="/#rencontrer" class="nav-link">Nous Rencontrer</a>
+        <a href="/visites/" class="nav-link is-active" aria-current="page">Visites</a>
+        <a href="https://commande.kuupanda.com/producteur/4079/particulier" target="_blank" rel="noopener"
+          class="bg-terre-600 hover:bg-terre-700 text-terre-50 px-4 py-2 rounded-full transition">Boutique</a>
+      </nav>
+      <button id="mobile-toggle" class="lg:hidden text-terre-700" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu"
+      class="hidden lg:hidden bg-terre-50 border-t border-terre-200 px-5 py-4 space-y-3 text-terre-700">
+      <a href="/#domaine" class="block">Le Domaine</a>
+      <a href="/#engagements" class="block">Nos Engagements</a>
+      <a href="/#vins" class="block">Nos Vins</a>
+      <a href="/#huile" class="block">Notre Huile d'olive</a>
+      <a href="/#rencontrer" class="block">Nous Rencontrer</a>
+      <a href="/visites/" class="block font-semibold" aria-current="page">Visites</a>
+      <a href="https://commande.kuupanda.com/producteur/4079/particulier" target="_blank" rel="noopener"
+        class="block font-semibold">Boutique en ligne →</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="relative h-[70vh] min-h-[480px] flex items-center justify-center overflow-hidden mt-[64px]">
+    <img src="/img/vignes.webp" alt="Vignes en gobelet sur le terroir des Aspres"
+      class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-b from-terre-900/55 via-terre-900/25 to-terre-900/70"></div>
+    <div class="relative z-10 text-center text-terre-50 px-6 max-w-3xl">
+      <p class="uppercase tracking-[0.4em] text-xs md:text-sm mb-6 opacity-90">
+        Œnotourisme · Aspres · Roussillon
+      </p>
+      <h1 class="serif text-4xl md:text-6xl mb-6 leading-tight">
+        Visite & dégustation au Domaine du Lendemain
+      </h1>
+      <p class="serif text-lg md:text-xl mb-8 text-terre-100">
+        Une heure et demie entre vignes, plantes médicinales et vins vivants.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="#reservation"
+          class="bg-terre-50 text-terre-800 hover:bg-terre-200 px-7 py-3 rounded-full transition">Réserver une date</a>
+        <a href="#experience"
+          class="border border-terre-50/80 text-terre-50 hover:bg-terre-50/10 px-7 py-3 rounded-full transition">Découvrir
+          l'expérience</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFOS PRATIQUES -->
+  <section class="py-14 px-5 bg-terre-50 border-b border-terre-200">
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 fade-in">
+      <div class="bg-terre-100 border border-terre-200 rounded-lg p-5 text-center">
+        <div class="flex justify-center mb-3 text-terre-600">
+          <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <circle cx="12" cy="12" r="9" stroke-width="1.5" />
+            <path stroke-linecap="round" stroke-width="1.5" d="M12 7v5l3 2" />
           </svg>
-        </button>
+        </div>
+        <div class="text-terre-500 text-xs uppercase tracking-widest mb-1">Durée</div>
+        <div class="serif text-lg text-terre-700">Environ 1h30</div>
       </div>
-      <div
-        id="mobile-menu"
-        class="hidden lg:hidden bg-terre-50 border-t border-terre-200 px-5 py-4 space-y-3 text-terre-700"
-      >
-        <a href="/#domaine" class="block">Le Domaine</a>
-        <a href="/#engagements" class="block">Nos Engagements</a>
-        <a href="/#vins" class="block">Nos Vins</a>
-        <a href="/#huile" class="block">Notre Huile d'olive</a>
-        <a href="/#rencontrer" class="block">Nous Rencontrer</a>
-        <a href="/visites/" class="block font-semibold" aria-current="page">Visites</a>
-        <a
-          href="https://commande.kuupanda.com/producteur/4079/particulier"
-          target="_blank"
-          rel="noopener"
-          class="block font-semibold"
-          >Boutique en ligne →</a
-        >
+      <div class="bg-terre-100 border border-terre-200 rounded-lg p-5 text-center">
+        <div class="flex justify-center mb-3 text-terre-600">
+          <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 014-4h0a4 4 0 014 4v2m-2-12a4 4 0 11-8 0 4 4 0 018 0zm6 4a3 3 0 100-6 3 3 0 000 6z" />
+          </svg>
+        </div>
+        <div class="text-terre-500 text-xs uppercase tracking-widest mb-1">Groupe</div>
+        <div class="serif text-lg text-terre-700">14 personnes max</div>
       </div>
-    </header>
+      <div class="bg-terre-100 border border-terre-200 rounded-lg p-5 text-center">
+        <div class="flex justify-center mb-3 text-terre-600">
+          <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <circle cx="12" cy="12" r="9" stroke-width="1.5" />
+            <path stroke-linecap="round" stroke-width="1.5" d="M3 12h18M12 3a13 13 0 010 18M12 3a13 13 0 000 18" />
+          </svg>
+        </div>
+        <div class="text-terre-500 text-xs uppercase tracking-widest mb-1">Langues</div>
+        <div class="serif text-lg text-terre-700">FR · EN · ES</div>
+      </div>
+      <div class="bg-terre-100 border border-terre-200 rounded-lg p-5 text-center">
+        <div class="flex justify-center mb-3 text-terre-600">
+          <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M9 12l2 2 4-4m5 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <div class="text-terre-500 text-xs uppercase tracking-widest mb-1">Annulation</div>
+        <div class="serif text-lg text-terre-700">Gratuite jusqu'à J-1</div>
+      </div>
+    </div>
+  </section>
 
-    <!-- HERO -->
-    <section
-      id="top"
-      class="relative h-[70vh] min-h-[480px] flex items-center justify-center overflow-hidden mt-[64px]"
-    >
-      <img
-        src="/img/vignes.webp"
-        alt="Vignes en gobelet sur le terroir des Aspres"
-        class="absolute inset-0 w-full h-full object-cover"
-      />
-      <div
-        class="absolute inset-0 bg-gradient-to-b from-terre-900/55 via-terre-900/25 to-terre-900/70"
-      ></div>
-      <div class="relative z-10 text-center text-terre-50 px-6 max-w-3xl">
-        <p class="uppercase tracking-[0.4em] text-xs md:text-sm mb-6 opacity-90">
-          Œnotourisme · Aspres · Roussillon
+  <!-- EXPÉRIENCE -->
+  <section id="experience" class="py-24 px-5 bg-terre-100 grain">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-14 fade-in">
+        <p class="uppercase tracking-[0.3em] text-xs text-terre-500 mb-4">
+          L'expérience
         </p>
-        <h1 class="serif text-4xl md:text-6xl mb-6 leading-tight">
-          Visite & dégustation au Domaine du Lendemain
-        </h1>
-        <p class="serif text-lg md:text-xl mb-8 text-terre-100">
-          Une heure et demie entre vignes, plantes médicinales et vins vivants.
+        <h2 class="serif text-4xl md:text-5xl text-terre-700 section-title center inline-block">
+          Une rencontre avec le vivant
+        </h2>
+      </div>
+
+      <div class="space-y-6 leading-relaxed text-lg fade-in">
+        <p>
+          Le Domaine du Lendemain s'étend sur 9 hectares au pied des Pyrénées,
+          sur les coteaux argilo-calcaires des Aspres. J'y cultive des cépages
+          patrimoniaux de la Catalogne Nord — Grenache, Carignan, Lledoner
+          pelut — dans le respect d'une viticulture biodynamique exigeante.
+          Mon parcours d'herbaliste m'a appris à lire la vigne autrement : à
+          écouter ce que les plantes alentours nous disent du sol, du climat,
+          des équilibres à trouver.
         </p>
-        <div class="flex flex-col sm:flex-row gap-3 justify-center">
-          <a
-            href="#reservation"
-            class="bg-terre-50 text-terre-800 hover:bg-terre-200 px-7 py-3 rounded-full transition"
-            >Réserver une date</a
-          >
-          <a
-            href="#experience"
-            class="border border-terre-50/80 text-terre-50 hover:bg-terre-50/10 px-7 py-3 rounded-full transition"
-            >Découvrir l'expérience</a
-          >
-        </div>
+        <p>
+          Lors de la visite, je vous emmène entre les rangs pour vous montrer
+          le travail au quotidien : les très vieilles vignes sauvées de
+          l'arrachage, les haies nourricières que nous replantons, les
+          tisanes de saule, d'ortie et de prêle qui remplacent ici les
+          produits de synthèse. Vous comprendrez comment le rythme lunaire
+          guide nos interventions et pourquoi chaque cuvée porte un nom
+          emprunté à la phytothérapie.
+        </p>
+        <p>
+          La dégustation se fait sans pression, autour de quatre vins choisis
+          pour raconter le millésime. Levures indigènes, vinifications par
+          gravité, élevages doux : ce sont des vins qui prennent le temps. Ce
+          que je vous propose ici, ce n'est pas un défilé d'étiquettes — c'est
+          un moment partagé, à hauteur d'écosystème.
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- INFOS PRATIQUES -->
-    <section class="py-14 px-5 bg-terre-50 border-b border-terre-200">
-      <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 fade-in">
-        <div class="bg-terre-100 border border-terre-200 rounded-lg p-5 text-center">
-          <div class="flex justify-center mb-3 text-terre-600">
-            <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="9" stroke-width="1.5"/><path stroke-linecap="round" stroke-width="1.5" d="M12 7v5l3 2"/></svg>
-          </div>
-          <div class="text-terre-500 text-xs uppercase tracking-widest mb-1">Durée</div>
-          <div class="serif text-lg text-terre-700">Environ 1h30</div>
-        </div>
-        <div class="bg-terre-100 border border-terre-200 rounded-lg p-5 text-center">
-          <div class="flex justify-center mb-3 text-terre-600">
-            <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 014-4h0a4 4 0 014 4v2m-2-12a4 4 0 11-8 0 4 4 0 018 0zm6 4a3 3 0 100-6 3 3 0 000 6z"/></svg>
-          </div>
-          <div class="text-terre-500 text-xs uppercase tracking-widest mb-1">Groupe</div>
-          <div class="serif text-lg text-terre-700">14 personnes max</div>
-        </div>
-        <div class="bg-terre-100 border border-terre-200 rounded-lg p-5 text-center">
-          <div class="flex justify-center mb-3 text-terre-600">
-            <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="9" stroke-width="1.5"/><path stroke-linecap="round" stroke-width="1.5" d="M3 12h18M12 3a13 13 0 010 18M12 3a13 13 0 000 18"/></svg>
-          </div>
-          <div class="text-terre-500 text-xs uppercase tracking-widest mb-1">Langues</div>
-          <div class="serif text-lg text-terre-700">FR · EN · ES</div>
-        </div>
-        <div class="bg-terre-100 border border-terre-200 rounded-lg p-5 text-center">
-          <div class="flex justify-center mb-3 text-terre-600">
-            <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          </div>
-          <div class="text-terre-500 text-xs uppercase tracking-widest mb-1">Annulation</div>
-          <div class="serif text-lg text-terre-700">Gratuite jusqu'à J-1</div>
-        </div>
+  <!-- CE QUI VOUS ATTEND -->
+  <section class="py-24 px-5 bg-terre-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14 fade-in">
+        <p class="uppercase tracking-[0.3em] text-xs text-terre-500 mb-4">
+          Au programme
+        </p>
+        <h2 class="serif text-4xl md:text-5xl text-terre-700 section-title center inline-block">
+          Ce qui vous attend
+        </h2>
       </div>
-    </section>
 
-    <!-- EXPÉRIENCE -->
-    <section id="experience" class="py-24 px-5 bg-terre-100 grain">
-      <div class="max-w-4xl mx-auto">
-        <div class="text-center mb-14 fade-in">
-          <p class="uppercase tracking-[0.3em] text-xs text-terre-500 mb-4">
-            L'expérience
-          </p>
-          <h2 class="serif text-4xl md:text-5xl text-terre-700 section-title center inline-block">
-            Une rencontre avec le vivant
-          </h2>
+      <div class="grid md:grid-cols-2 gap-5 fade-in">
+        <div class="bg-terre-100 border border-terre-200 rounded-xl p-6 flex gap-5">
+          <div class="serif text-3xl text-terre-600 leading-none mt-1">01</div>
+          <div>
+            <h3 class="serif text-xl text-terre-700 mb-2">Promenade dans le vignoble</h3>
+            <p class="text-sm text-terre-600 leading-relaxed">
+              Découverte des parcelles et rencontre avec les très vieilles
+              vignes — Grenache de 1900, Carignan centenaire — préservées de
+              l'arrachage.
+            </p>
+          </div>
         </div>
-
-        <div class="space-y-6 leading-relaxed text-lg fade-in">
-          <p>
-            Le Domaine du Lendemain s'étend sur 9 hectares au pied des Pyrénées,
-            sur les coteaux argilo-calcaires des Aspres. J'y cultive des cépages
-            patrimoniaux de la Catalogne Nord — Grenache, Carignan, Lledoner
-            pelut — dans le respect d'une viticulture biodynamique exigeante.
-            Mon parcours d'herbaliste m'a appris à lire la vigne autrement : à
-            écouter ce que les plantes alentours nous disent du sol, du climat,
-            des équilibres à trouver.
-          </p>
-          <p>
-            Lors de la visite, je vous emmène entre les rangs pour vous montrer
-            le travail au quotidien : les très vieilles vignes sauvées de
-            l'arrachage, les haies nourricières que nous replantons, les
-            tisanes de saule, d'ortie et de prêle qui remplacent ici les
-            produits de synthèse. Vous comprendrez comment le rythme lunaire
-            guide nos interventions et pourquoi chaque cuvée porte un nom
-            emprunté à la phytothérapie.
-          </p>
-          <p>
-            La dégustation se fait sans pression, autour de quatre vins choisis
-            pour raconter le millésime. Levures indigènes, vinifications par
-            gravité, élevages doux : ce sont des vins qui prennent le temps. Ce
-            que je vous propose ici, ce n'est pas un défilé d'étiquettes — c'est
-            un moment partagé, à hauteur d'écosystème.
-          </p>
+        <div class="bg-terre-100 border border-terre-200 rounded-xl p-6 flex gap-5">
+          <div class="serif text-3xl text-terre-600 leading-none mt-1">02</div>
+          <div>
+            <h3 class="serif text-xl text-terre-700 mb-2">Bio, biodynamie, agroécologie</h3>
+            <p class="text-sm text-terre-600 leading-relaxed">
+              Lecture des pratiques en place sur le domaine : sols vivants,
+              haies, verger méditerranéen, gestion sans intrants chimiques.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- CE QUI VOUS ATTEND -->
-    <section class="py-24 px-5 bg-terre-50">
-      <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-14 fade-in">
-          <p class="uppercase tracking-[0.3em] text-xs text-terre-500 mb-4">
-            Au programme
-          </p>
-          <h2 class="serif text-4xl md:text-5xl text-terre-700 section-title center inline-block">
-            Ce qui vous attend
-          </h2>
+        <div class="bg-terre-100 border border-terre-200 rounded-xl p-6 flex gap-5">
+          <div class="serif text-3xl text-terre-600 leading-none mt-1">03</div>
+          <div>
+            <h3 class="serif text-xl text-terre-700 mb-2">Cycles lunaires & plantes</h3>
+            <p class="text-sm text-terre-600 leading-relaxed">
+              Comment le calendrier biodynamique rythme le travail, et
+              pourquoi nous pulvérisons décoctions, purins et hydrolats
+              préparés sur place.
+            </p>
+          </div>
         </div>
-
-        <div class="grid md:grid-cols-2 gap-5 fade-in">
-          <div class="bg-terre-100 border border-terre-200 rounded-xl p-6 flex gap-5">
-            <div class="serif text-3xl text-terre-600 leading-none mt-1">01</div>
-            <div>
-              <h3 class="serif text-xl text-terre-700 mb-2">Promenade dans le vignoble</h3>
-              <p class="text-sm text-terre-600 leading-relaxed">
-                Découverte des parcelles et rencontre avec les très vieilles
-                vignes — Grenache de 1900, Carignan centenaire — préservées de
-                l'arrachage.
-              </p>
-            </div>
+        <div class="bg-terre-100 border border-terre-200 rounded-xl p-6 flex gap-5">
+          <div class="serif text-3xl text-terre-600 leading-none mt-1">04</div>
+          <div>
+            <h3 class="serif text-xl text-terre-700 mb-2">Vinification naturelle</h3>
+            <p class="text-sm text-terre-600 leading-relaxed">
+              Levures indigènes, vinifications par gravité, élevages sans
+              produit de synthèse : un aperçu des choix faits à la cave.
+            </p>
           </div>
-          <div class="bg-terre-100 border border-terre-200 rounded-xl p-6 flex gap-5">
-            <div class="serif text-3xl text-terre-600 leading-none mt-1">02</div>
-            <div>
-              <h3 class="serif text-xl text-terre-700 mb-2">Bio, biodynamie, agroécologie</h3>
-              <p class="text-sm text-terre-600 leading-relaxed">
-                Lecture des pratiques en place sur le domaine : sols vivants,
-                haies, verger méditerranéen, gestion sans intrants chimiques.
-              </p>
-            </div>
-          </div>
-          <div class="bg-terre-100 border border-terre-200 rounded-xl p-6 flex gap-5">
-            <div class="serif text-3xl text-terre-600 leading-none mt-1">03</div>
-            <div>
-              <h3 class="serif text-xl text-terre-700 mb-2">Cycles lunaires & plantes</h3>
-              <p class="text-sm text-terre-600 leading-relaxed">
-                Comment le calendrier biodynamique rythme le travail, et
-                pourquoi nous pulvérisons décoctions, purins et hydrolats
-                préparés sur place.
-              </p>
-            </div>
-          </div>
-          <div class="bg-terre-100 border border-terre-200 rounded-xl p-6 flex gap-5">
-            <div class="serif text-3xl text-terre-600 leading-none mt-1">04</div>
-            <div>
-              <h3 class="serif text-xl text-terre-700 mb-2">Vinification naturelle</h3>
-              <p class="text-sm text-terre-600 leading-relaxed">
-                Levures indigènes, vinifications par gravité, élevages sans
-                produit de synthèse : un aperçu des choix faits à la cave.
-              </p>
-            </div>
-          </div>
-          <div class="bg-terre-100 border border-terre-200 rounded-xl p-6 flex gap-5 md:col-span-2">
-            <div class="serif text-3xl text-terre-600 leading-none mt-1">05</div>
-            <div>
-              <h3 class="serif text-xl text-terre-700 mb-2">Dégustation commentée — 4 cuvées</h3>
-              <p class="text-sm text-terre-600 leading-relaxed">
-                Quatre vins du domaine, choisis pour refléter la diversité des
-                cépages et des millésimes. Cuvées dont les noms s'inspirent de
-                la phytothérapie, à l'image du travail mené dans les rangs.
-              </p>
-            </div>
+        </div>
+        <div class="bg-terre-100 border border-terre-200 rounded-xl p-6 flex gap-5 md:col-span-2">
+          <div class="serif text-3xl text-terre-600 leading-none mt-1">05</div>
+          <div>
+            <h3 class="serif text-xl text-terre-700 mb-2">Dégustation commentée — 4 cuvées</h3>
+            <p class="text-sm text-terre-600 leading-relaxed">
+              Quatre vins du domaine, choisis pour refléter la diversité des
+              cépages et des millésimes. Cuvées dont les noms s'inspirent de
+              la phytothérapie, à l'image du travail mené dans les rangs.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- GALERIE -->
-    <section class="py-20 px-5 bg-terre-100 grain">
-      <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-10 fade-in">
-          <p class="uppercase tracking-[0.3em] text-xs text-terre-500 mb-4">
-            Aperçu
-          </p>
-          <h2 class="serif text-3xl md:text-4xl text-terre-700 section-title center inline-block">
-            Le domaine en images
-          </h2>
+  <!-- GALERIE -->
+  <section class="py-20 px-5 bg-terre-100 grain">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-10 fade-in">
+        <p class="uppercase tracking-[0.3em] text-xs text-terre-500 mb-4">
+          Aperçu
+        </p>
+        <h2 class="serif text-3xl md:text-4xl text-terre-700 section-title center inline-block">
+          Le domaine en images
+        </h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 fade-in">
+        <img src="/img/vignes.webp" alt="Vignes en gobelet sur le terroir des Aspres"
+          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
+        <img src="/img/aspres1.webp" alt="Paysage des Aspres au pied des Pyrénées"
+          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
+        <img src="/img/petit-matin.webp" alt="Lumière matinale sur le vignoble"
+          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
+        <img src="/img/vendange.webp" alt="Vendanges manuelles au domaine"
+          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
+        <img src="/img/encuvage.webp" alt="Encuvage en douceur en cave"
+          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
+        <img src="/img/rencontre.webp" alt="Visite et dégustation au Domaine du Lendemain"
+          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section id="reservation" class="py-24 px-5 bg-terre-50 scroll-mt-24">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-12 fade-in">
+        <p class="uppercase tracking-[0.3em] text-xs text-terre-500 mb-4">
+          Réservation
+        </p>
+        <h2 class="serif text-4xl md:text-5xl text-terre-700 section-title center inline-block">
+          Choisir une date
+        </h2>
+        <p class="mt-6 leading-relaxed">
+          À partir de <strong>15&nbsp;€ par adulte</strong>. Réservation
+          sécurisée via notre partenaire Viny'aquí, paiement en ligne,
+          confirmation immédiate.
+        </p>
+      </div>
+
+      <div class="bg-terre-100 border border-terre-200 rounded-xl p-5 md:p-8 fade-in vinyaqui-wrap">
+        <!-- Widget de réservation Vinyaqui -->
+        <div id="vinyaqui-widget"></div>
+        <a class="vinyaqui-backlink"
+          href="https://vinyaqui.com.test/activities/visite-dans-les-vignes-et-degustation-de-vins-biodynamiques-au-domaine-du-lendemain"
+          target="_blank" rel="noopener noreferrer">Réservez cette expérience sur Viny'aquí</a>
+        <link rel="stylesheet" href="https://vinyaqui.com.test/widget/booking-widget.css?v=1.3">
+        <script src="https://vinyaqui.com.test/widget/booking-widget.js?v=1.3"
+          data-api-base="https://vinyaqui.com.test/api"
+          data-activity="visite-dans-les-vignes-et-degustation-de-vins-biodynamiques-au-domaine-du-lendemain"
+          data-api-key="vk_rxeFAYenwYyHvQ2NAq3ncwzaU67jVGReo2tt6fTL5xHildOeKCZdq4hqHryW"
+          data-target="#vinyaqui-widget"></script>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCES / CONTACT -->
+  <section class="py-20 px-5 bg-terre-100 grain">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-10 fade-in">
+        <p class="uppercase tracking-[0.3em] text-xs text-terre-500 mb-4">
+          Nous trouver
+        </p>
+        <h2 class="serif text-3xl md:text-4xl text-terre-700 section-title center inline-block">
+          Accès au domaine
+        </h2>
+        <p class="mt-6 leading-relaxed max-w-2xl mx-auto">
+          Le domaine se situe à Fourques (66300), à 15 km au sud de Perpignan.
+          Une question avant de venir ? Écrivez-nous ou appelez directement.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 fade-in">
+        <div class="bg-terre-50 border border-terre-200 rounded-lg p-6 text-center">
+          <div class="text-terre-500 text-xs uppercase tracking-widest mb-2">Téléphone</div>
+          <a href="tel:+33685820452" class="serif text-2xl text-terre-700 hover:text-terre-800">
+            06 85 82 04 52
+          </a>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-3 fade-in">
-          <img src="/img/vignes.webp" alt="Vignes en gobelet sur le terroir des Aspres" class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
-          <img src="/img/aspres1.webp" alt="Paysage des Aspres au pied des Pyrénées" class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
-          <img src="/img/petit-matin.webp" alt="Lumière matinale sur le vignoble" class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
-          <img src="/img/vendange.webp" alt="Vendanges manuelles au domaine" class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
-          <img src="/img/encuvage.webp" alt="Encuvage en douceur en cave" class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
-          <img src="/img/rencontre.webp" alt="Visite et dégustation au Domaine du Lendemain" class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
+        <div class="bg-terre-50 border border-terre-200 rounded-lg p-6 text-center">
+          <div class="text-terre-500 text-xs uppercase tracking-widest mb-2">Email</div>
+          <a href="mailto:mireilleribiere8@gmail.com"
+            class="serif text-xl text-terre-700 hover:text-terre-800 break-all">
+            mireilleribiere8@gmail.com
+          </a>
+        </div>
+        <div class="bg-terre-50 border border-terre-200 rounded-lg p-6 text-center">
+          <div class="text-terre-500 text-xs uppercase tracking-widest mb-2">Adresse</div>
+          <a href="https://maps.google.com/?q=102+Route+de+Trouillas+66300+Fourques" target="_blank" rel="noopener"
+            class="serif text-lg text-terre-700 hover:text-terre-800 leading-snug block">
+            102 Route de Trouillas<br />66300 Fourques
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- RESERVATION -->
-    <section id="reservation" class="py-24 px-5 bg-terre-50 scroll-mt-24">
-      <div class="max-w-3xl mx-auto">
-        <div class="text-center mb-12 fade-in">
-          <p class="uppercase tracking-[0.3em] text-xs text-terre-500 mb-4">
-            Réservation
-          </p>
-          <h2 class="serif text-4xl md:text-5xl text-terre-700 section-title center inline-block">
-            Choisir une date
-          </h2>
-          <p class="mt-6 leading-relaxed">
-            À partir de <strong>15&nbsp;€ par adulte</strong>. Réservation
-            sécurisée via notre partenaire Viny'aquí, paiement en ligne,
-            confirmation immédiate.
-          </p>
+  <!-- FOOTER -->
+  <footer class="bg-terre-800 text-terre-200 py-12 px-5">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 items-start">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="/logo-domaine-du-lendemain.jpg" alt=""
+            class="h-12 w-12 rounded-full object-cover border border-terre-600" />
+          <span class="serif text-2xl text-terre-50">Domaine du Lendemain</span>
         </div>
-
-        <div class="bg-terre-100 border border-terre-200 rounded-xl p-5 md:p-8 fade-in vinyaqui-wrap">
-          <!-- Widget de réservation Vinyaqui -->
-          <div id="vinyaqui-widget"></div>
-          <a class="vinyaqui-backlink" href="https://vinyaqui.com/activities/visite-dans-les-vignes-et-degustation-de-vins-biodynamiques-au-domaine-du-lendemain" target="_blank" rel="noopener noreferrer">Réservez cette expérience sur Viny'aquí</a>
-          <link rel="stylesheet" href="https://vinyaqui.com/widget/booking-widget.css?v=1.3">
-          <script
-            src="https://vinyaqui.com/widget/booking-widget.js?v=1.3"
-            data-api-base="https://vinyaqui.com/api"
-            data-activity="visite-dans-les-vignes-et-degustation-de-vins-biodynamiques-au-domaine-du-lendemain"
-            data-api-key="vk_rxeFAYenwYyHvQ2NAq3ncwzaU67jVGReo2tt6fTL5xHildOeKCZdq4hqHryW"
-            data-target="#vinyaqui-widget"
-          ></script>
+        <p class="text-sm text-terre-300 leading-relaxed">
+          Vins biodynamiques sur le terroir des Aspres — Catalogne Nord.
+        </p>
+      </div>
+      <div>
+        <h4 class="serif text-lg text-terre-50 mb-3">Contact</h4>
+        <p class="text-sm leading-relaxed">
+          102 Route de Trouillas<br />66300 Fourques<br />
+          <a href="tel:+33685820452" class="hover:text-terre-50">06 85 82 04 52</a><br />
+          <a href="mailto:mireilleribiere8@gmail.com" class="hover:text-terre-50 break-all">
+            mireilleribiere8@gmail.com
+          </a>
+        </p>
+      </div>
+      <div>
+        <h4 class="serif text-lg text-terre-50 mb-3">Suivez-nous</h4>
+        <div class="flex gap-4">
+          <a href="https://www.instagram.com/domainedulendemain/" target="_blank" rel="noopener" aria-label="Instagram"
+            class="h-10 w-10 rounded-full border border-terre-600 hover:bg-terre-700 hover:border-terre-50 flex items-center justify-center transition">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.5.9.4.4.7.9.9 1.5.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.5-.4.4-.9.7-1.5.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.5-.9-.4-.4-.7-.9-.9-1.5-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.5.4-.4.9-.7 1.5-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1C2.7 8.5 2.7 8.9 2.7 12s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 110 9.8 4.9 4.9 0 010-9.8zm0 8.1a3.2 3.2 0 100-6.4 3.2 3.2 0 000 6.4zm6.2-8.3a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z" />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/domainedulendemainmireilleribiere/?locale=fr_FR" target="_blank"
+            rel="noopener" aria-label="Facebook"
+            class="h-10 w-10 rounded-full border border-terre-600 hover:bg-terre-700 hover:border-terre-50 flex items-center justify-center transition">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M22 12a10 10 0 10-11.6 9.9v-7H8v-2.9h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2.1.2 2.1.2v2.3h-1.2c-1.2 0-1.5.7-1.5 1.5v1.8H16l-.4 2.9h-2.2v7A10 10 0 0022 12z" />
+            </svg>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+    <div
+      class="max-w-6xl mx-auto mt-10 pt-6 border-t border-terre-700 text-xs text-terre-400 flex flex-col sm:flex-row justify-between gap-2">
+      <p>© <span id="year"></span> Domaine du Lendemain — Mireille Ribière</p>
+      <p>Les Aspres · Roussillon · Catalogne Nord</p>
+    </div>
+  </footer>
 
-    <!-- ACCES / CONTACT -->
-    <section class="py-20 px-5 bg-terre-100 grain">
-      <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-10 fade-in">
-          <p class="uppercase tracking-[0.3em] text-xs text-terre-500 mb-4">
-            Nous trouver
-          </p>
-          <h2 class="serif text-3xl md:text-4xl text-terre-700 section-title center inline-block">
-            Accès au domaine
-          </h2>
-          <p class="mt-6 leading-relaxed max-w-2xl mx-auto">
-            Le domaine se situe à Fourques (66300), à 15 km au sud de Perpignan.
-            Une question avant de venir ? Écrivez-nous ou appelez directement.
-          </p>
-        </div>
-        <div class="grid md:grid-cols-3 gap-6 fade-in">
-          <div class="bg-terre-50 border border-terre-200 rounded-lg p-6 text-center">
-            <div class="text-terre-500 text-xs uppercase tracking-widest mb-2">Téléphone</div>
-            <a href="tel:+33685820452" class="serif text-2xl text-terre-700 hover:text-terre-800">
-              06 85 82 04 52
-            </a>
-          </div>
-          <div class="bg-terre-50 border border-terre-200 rounded-lg p-6 text-center">
-            <div class="text-terre-500 text-xs uppercase tracking-widest mb-2">Email</div>
-            <a
-              href="mailto:mireilleribiere8@gmail.com"
-              class="serif text-xl text-terre-700 hover:text-terre-800 break-all"
-            >
-              mireilleribiere8@gmail.com
-            </a>
-          </div>
-          <div class="bg-terre-50 border border-terre-200 rounded-lg p-6 text-center">
-            <div class="text-terre-500 text-xs uppercase tracking-widest mb-2">Adresse</div>
-            <a
-              href="https://maps.google.com/?q=102+Route+de+Trouillas+66300+Fourques"
-              target="_blank"
-              rel="noopener"
-              class="serif text-lg text-terre-700 hover:text-terre-800 leading-snug block"
-            >
-              102 Route de Trouillas<br />66300 Fourques
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+  <script>
+    const t = document.getElementById("mobile-toggle");
+    const m = document.getElementById("mobile-menu");
+    t.addEventListener("click", () => m.classList.toggle("hidden"));
+    m.querySelectorAll("a").forEach((a) =>
+      a.addEventListener("click", () => m.classList.add("hidden"))
+    );
 
-    <!-- FOOTER -->
-    <footer class="bg-terre-800 text-terre-200 py-12 px-5">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 items-start">
-        <div>
-          <div class="flex items-center gap-3 mb-4">
-            <img
-              src="/logo-domaine-du-lendemain.jpg"
-              alt=""
-              class="h-12 w-12 rounded-full object-cover border border-terre-600"
-            />
-            <span class="serif text-2xl text-terre-50">Domaine du Lendemain</span>
-          </div>
-          <p class="text-sm text-terre-300 leading-relaxed">
-            Vins biodynamiques sur le terroir des Aspres — Catalogne Nord.
-          </p>
-        </div>
-        <div>
-          <h4 class="serif text-lg text-terre-50 mb-3">Contact</h4>
-          <p class="text-sm leading-relaxed">
-            102 Route de Trouillas<br />66300 Fourques<br />
-            <a href="tel:+33685820452" class="hover:text-terre-50">06 85 82 04 52</a><br />
-            <a href="mailto:mireilleribiere8@gmail.com" class="hover:text-terre-50 break-all">
-              mireilleribiere8@gmail.com
-            </a>
-          </p>
-        </div>
-        <div>
-          <h4 class="serif text-lg text-terre-50 mb-3">Suivez-nous</h4>
-          <div class="flex gap-4">
-            <a
-              href="https://www.instagram.com/domainedulendemain/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Instagram"
-              class="h-10 w-10 rounded-full border border-terre-600 hover:bg-terre-700 hover:border-terre-50 flex items-center justify-center transition"
-            >
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.5.9.4.4.7.9.9 1.5.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.5-.4.4-.9.7-1.5.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.5-.9-.4-.4-.7-.9-.9-1.5-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.5.4-.4.9-.7 1.5-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1C2.7 8.5 2.7 8.9 2.7 12s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 110 9.8 4.9 4.9 0 010-9.8zm0 8.1a3.2 3.2 0 100-6.4 3.2 3.2 0 000 6.4zm6.2-8.3a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"/></svg>
-            </a>
-            <a
-              href="https://www.facebook.com/domainedulendemainmireilleribiere/?locale=fr_FR"
-              target="_blank"
-              rel="noopener"
-              aria-label="Facebook"
-              class="h-10 w-10 rounded-full border border-terre-600 hover:bg-terre-700 hover:border-terre-50 flex items-center justify-center transition"
-            >
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.6 9.9v-7H8v-2.9h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2.1.2 2.1.2v2.3h-1.2c-1.2 0-1.5.7-1.5 1.5v1.8H16l-.4 2.9h-2.2v7A10 10 0 0022 12z"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="max-w-6xl mx-auto mt-10 pt-6 border-t border-terre-700 text-xs text-terre-400 flex flex-col sm:flex-row justify-between gap-2">
-        <p>© <span id="year"></span> Domaine du Lendemain — Mireille Ribière</p>
-        <p>Les Aspres · Roussillon · Catalogne Nord</p>
-      </div>
-    </footer>
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-    <script>
-      const t = document.getElementById("mobile-toggle");
-      const m = document.getElementById("mobile-menu");
-      t.addEventListener("click", () => m.classList.toggle("hidden"));
-      m.querySelectorAll("a").forEach((a) =>
-        a.addEventListener("click", () => m.classList.add("hidden"))
-      );
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("visible");
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+    document.querySelectorAll(".fade-in").forEach((el) => io.observe(el));
+  </script>
 
-      document.getElementById("year").textContent = new Date().getFullYear();
-
-      const io = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add("visible");
-              io.unobserve(e.target);
-            }
-          });
-        },
-        { threshold: 0.12 }
-      );
-      document.querySelectorAll(".fade-in").forEach((el) => io.observe(el));
-    </script>
-
-    <!-- JSON-LD -->
-    <script type="application/ld+json">
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "TouristAttraction",
@@ -667,5 +641,6 @@
         }
       }
     </script>
-  </body>
+</body>
+
 </html>
