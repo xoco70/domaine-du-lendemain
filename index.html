@@ -483,35 +483,35 @@
           </p>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 fade-in">
-          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 hover:border-terre-600 transition">
+          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 text-center">
             <div class="serif text-2xl text-terre-700">Grenache</div>
-            <div class="text-sm text-terre-500 mt-1">gris · blanc · noir</div>
+            <div class="text-sm text-terre-500 mt-1">gris, blanc et noir : <br/>le fruit à l’état pur</div>
           </div>
-          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 hover:border-terre-600 transition">
+          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 text-center">
             <div class="serif text-2xl text-terre-700">Carignan</div>
-            <div class="text-sm text-terre-500 mt-1">cépage roi du Roussillon</div>
+            <div class="text-sm text-terre-500 mt-1">le roi du Roussillon</div>
           </div>
-          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 hover:border-terre-600 transition">
+          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 text-center">
             <div class="serif text-2xl text-terre-700">Lledoner pelut</div>
-            <div class="text-sm text-terre-500 mt-1">cépage catalan ancien</div>
+            <div class="text-sm text-terre-500 mt-1">cépage oublié</div>
           </div>
-          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 hover:border-terre-600 transition">
+          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 text-center">
             <div class="serif text-2xl text-terre-700">Syrah</div>
             <div class="text-sm text-terre-500 mt-1">élégance &amp; épices</div>
           </div>
-          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 hover:border-terre-600 transition">
+          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 text-center">
             <div class="serif text-2xl text-terre-700">Muscat petits grains</div>
             <div class="text-sm text-terre-500 mt-1">aromatique</div>
           </div>
-          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 hover:border-terre-600 transition">
+          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 text-center">
             <div class="serif text-2xl text-terre-700">Muscat d'Alexandrie</div>
             <div class="text-sm text-terre-500 mt-1">méditerranéen</div>
           </div>
-          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 hover:border-terre-600 transition">
+          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 text-center">
             <div class="serif text-2xl text-terre-700">Mourvèdre</div>
             <div class="text-sm text-terre-500 mt-1">structure &amp; garde</div>
           </div>
-          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 hover:border-terre-600 transition">
+          <div class="bg-terre-100 border border-terre-200 rounded-lg p-6 text-center">
             <div class="serif text-2xl text-terre-700">Mataro</div>
             <div class="text-sm text-terre-500 mt-1">tradition catalane</div>
           </div>
@@ -608,6 +608,49 @@
       </div>
     </section>
 
+    <!-- VISITE & DEGUSTATION -->
+    <section id="visite" class="py-24 px-5 bg-terre-50">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <div class="fade-in order-2 md:order-1">
+          <p class="uppercase tracking-[0.3em] text-xs text-terre-500 mb-4">
+            Visite &amp; dégustation
+          </p>
+          <h2 class="serif text-4xl md:text-5xl text-terre-700 mb-6">
+            Venez découvrir le domaine
+          </h2>
+          <p class="leading-relaxed mb-6">
+            Une visite dans les vignes, suivie d'une dégustation de nos vins
+            biodynamiques au cœur des Aspres. Réservation en ligne simple et
+            sécurisée.
+          </p>
+          <div class="flex flex-col items-start gap-4">
+            <a
+              href="/visites/"
+              class="inline-flex items-center justify-center gap-2 bg-terre-600 hover:bg-terre-700 text-terre-50 px-7 py-3 rounded-full transition"
+            >
+              Réserver une visite
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            <a
+              href="https://vinyaqui.com/activities/visite-dans-les-vignes-et-degustation-de-vins-biodynamiques-au-domaine-du-lendemain"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-xs text-terre-500 hover:text-terre-700 underline underline-offset-4"
+            >
+              Réservation propulsée par Viny'aquí
+            </a>
+          </div>
+        </div>
+        <div class="fade-in order-1 md:order-2">
+          <img
+            src="img/vignes.webp"
+            alt="Vignes en gobelet sur le terroir des Aspres"
+            class="rounded-lg w-full h-full max-h-[420px] object-cover border border-terre-200"
+          />
+        </div>
+      </div>
+    </section>
+
     <!-- NOS PRODUITS -->
     <section id="produits" class="py-24 px-5 bg-terre-100 grain">
       <div class="max-w-6xl mx-auto">
@@ -668,12 +711,11 @@
                 <div class="text-xs uppercase tracking-widest text-terre-500 mb-1">IGP Côtes Catalanes Blanc</div>
                 <h4 class="serif text-2xl text-terre-700 mb-3">Brin d'Ille</h4>
                 <p class="text-sm text-terre-600 leading-relaxed flex-1">
-                  Le Muscat sec revisité parce que le Muscat petit grain, ce
-                  n'est pas que de la douceur ! Un cépage très aromatique qui
-                  derrière son exubérance cache encore une personnalité franche
-                  et complexe.<br />
-                  Macabeu, cépage emblématique des PO, plantureux parmi les
-                  blancs du Sud.<br />
+                  Des cépages revisités parce que le Muscat petit grain &amp;
+                  d'Alexandrie, ce n'est pas que de la douceur ! Des cépages
+                  aromatiques qui derrière leur exubérance cachent des
+                  personnalités franches et complexes. Un blanc sec et
+                  désaltérant pour un petit degré très juteux : 12°.<br />
                   Un brin d'originalité pour un lieu-dit nommé l'Ille.
                 </p>
               </div>
@@ -835,7 +877,7 @@
                   d'un alleu qui est alors « une Terre libre ne relevant d'aucun
                   seigneur et exempte de tout devoir féodal », ils lui ont donné
                   le nom de Mas Deu.<br />
-                  Voilà pourquoi j'ai choisi la célèbre danseuse Loïe Fuller pour
+                  Voilà pourquoi j'ai choisi la célèbre danseuse Loïs Fuller pour
                   représenter cette cuvée Aura Libre. Une femme qui a su libérer
                   les codes de la danse et du corps pour être à l'origine de la
                   danse contemporaine !
