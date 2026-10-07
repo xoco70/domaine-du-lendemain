@@ -16,6 +16,7 @@
   <meta name="description"
     content="Réservez votre visite-dégustation au Domaine du Lendemain à Fourques (Roussillon). Vignes, plantes médicinales, biodynamie. 4 vins commentés. Dès 15€." />
   <meta name="author" content="Mireille Ribière" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://domainedulendemain.com/visites/" />
 
   <meta property="og:type" content="website" />
@@ -25,49 +26,19 @@
   <meta property="og:image" content="https://domainedulendemain.com/img/vignes.webp" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:url" content="https://domainedulendemain.com/visites/" />
+  <meta property="og:image:width" content="1800" />
+  <meta property="og:image:height" content="1350" />
+  <meta property="og:image:alt" content="Les vignes du Domaine du Lendemain dans les Aspres" />
+  <meta property="og:site_name" content="Domaine du Lendemain" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&family=Raleway:wght@400;600;700&display=swap"
     rel="stylesheet" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            terre: {
-              50: "#faf7f1",
-              100: "#f1ebe0",
-              200: "#e7dfd4",
-              300: "#d4c4b0",
-              400: "#b59880",
-              500: "#9a7758",
-              600: "#7a5638",
-              700: "#5a4028",
-              800: "#3d2c1c",
-              900: "#22180f",
-            },
-            vigne: {
-              400: "#a8693a",
-              500: "#8a4f2a",
-              600: "#6b3b1f",
-            },
-            feuille: {
-              500: "#6b7a4f",
-              600: "#525e3c",
-            },
-          },
-          fontFamily: {
-            serif: ['"Averia Serif Libre"', "Georgia", "serif"],
-            sans: ['"Raleway"', "system-ui", "sans-serif"],
-          },
-        },
-      },
-    };
-  </script>
+  <link rel="stylesheet" href="/assets/site.css" />
 
   <style>
     html {
@@ -198,7 +169,8 @@
     <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between">
       <a href="/" class="flex items-center gap-3">
         <img src="/logo-domaine-du-lendemain.jpg" alt="Domaine du Lendemain"
-          class="h-10 w-10 rounded-full object-cover border border-terre-300" />
+          class="h-10 w-10 rounded-full object-cover border border-terre-300"
+          width="710" height="564" />
         <span class="serif text-terre-700 text-xl leading-tight">
           Domaine du Lendemain
         </span>
@@ -247,7 +219,8 @@
   <!-- HERO -->
   <section id="top" class="relative h-[70vh] min-h-[480px] flex items-center justify-center overflow-hidden mt-[64px]">
     <img src="/img/vignes.webp" alt="Vignes en gobelet sur le terroir des Aspres"
-      class="absolute inset-0 w-full h-full object-cover" />
+      class="absolute inset-0 w-full h-full object-cover"
+          width="1800" height="1350" fetchpriority="high" />
     <div class="absolute inset-0 bg-gradient-to-b from-terre-900/55 via-terre-900/25 to-terre-900/70"></div>
     <div class="relative z-10 text-center text-terre-50 px-6 max-w-3xl">
       <p class="uppercase tracking-[0.4em] text-xs md:text-sm mb-6 opacity-90">
@@ -440,17 +413,23 @@
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-3 fade-in">
         <img src="/img/vignes.webp" alt="Vignes en gobelet sur le terroir des Aspres"
-          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
+          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy"
+          width="1800" height="1350" loading="lazy" decoding="async" />
         <img src="/img/aspres1.webp" alt="Paysage des Aspres au pied des Pyrénées"
-          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
+          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy"
+          width="1800" height="1195" />
         <img src="/img/petit-matin.webp" alt="Lumière matinale sur le vignoble"
-          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
+          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy"
+          width="1800" height="1350" />
         <img src="/img/vendange.webp" alt="Vendanges manuelles au domaine"
-          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
+          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy"
+          width="1800" height="1350" />
         <img src="/img/encuvage.webp" alt="Encuvage en douceur en cave"
-          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
+          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy"
+          width="1800" height="1350" />
         <img src="/img/rencontre.webp" alt="Visite et dégustation au Domaine du Lendemain"
-          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy" />
+          class="rounded-lg w-full h-44 md:h-64 object-cover border border-terre-200" loading="lazy"
+          width="1800" height="1350" />
       </div>
     </div>
   </section>
@@ -477,7 +456,7 @@
         <div id="vinyaqui-widget"></div>
         <a class="vinyaqui-backlink"
           href="https://vinyaqui.com/activities/visite-dans-les-vignes-et-degustation-de-vins-biodynamiques-au-domaine-du-lendemain"
-          target="_blank" rel="noopener noreferrer">Réservez cette expérience sur Viny'aquí</a>
+          target="_blank" rel="noopener">Réservez cette expérience sur Viny'aquí</a>
         <link rel="stylesheet" href="https://vinyaqui.com/widget/booking-widget.css?v=1.4">
         <script src="https://vinyaqui.com/widget/booking-widget.js?v=1.4" data-api-base="https://vinyaqui.com/api"
           data-activity="visite-dans-les-vignes-et-degustation-de-vins-biodynamiques-au-domaine-du-lendemain"
@@ -533,7 +512,8 @@
       <div>
         <div class="flex items-center gap-3 mb-4">
           <img src="/logo-domaine-du-lendemain.jpg" alt=""
-            class="h-12 w-12 rounded-full object-cover border border-terre-600" />
+            class="h-12 w-12 rounded-full object-cover border border-terre-600"
+          width="710" height="564" loading="lazy" decoding="async" />
           <span class="serif text-2xl text-terre-50">Domaine du Lendemain</span>
         </div>
         <p class="text-sm text-terre-300 leading-relaxed">
@@ -604,44 +584,53 @@
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "TouristAttraction",
-        "name": "Visite & dégustation au Domaine du Lendemain",
-        "description": "Visite guidée du vignoble en biodynamie et dégustation commentée de 4 cuvées au Domaine du Lendemain, terroir des Aspres en Roussillon.",
-        "url": "https://domainedulendemain.com/visites/",
-        "image": "https://domainedulendemain.com/img/vignes.webp",
-        "inLanguage": ["fr", "en", "es", "ca"],
-        "isAccessibleForFree": false,
-        "touristType": ["Wine tourism", "Œnotourisme"],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "102 Route de Trouillas",
-          "postalCode": "66300",
-          "addressLocality": "Fourques",
-          "addressRegion": "Pyrénées-Orientales",
-          "addressCountry": "FR"
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TouristTrip",
+          "@id": "https://domainedulendemain.com/visites/#visite",
+          "name": "Visite & dégustation au Domaine du Lendemain",
+          "description": "Visite guidée du vignoble en biodynamie et dégustation commentée de 4 cuvées au Domaine du Lendemain, terroir des Aspres en Roussillon.",
+          "url": "https://domainedulendemain.com/visites/",
+          "image": "https://domainedulendemain.com/img/vignes.webp",
+          "inLanguage": ["fr", "en", "es", "ca"],
+          "touristType": ["Wine tourism", "Œnotourisme"],
+          "provider": { "@id": "https://domainedulendemain.com/#winery" },
+          "offers": {
+            "@type": "Offer",
+            "price": "15.00",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://vinyaqui.com/activities/visite-dans-les-vignes-et-degustation-de-vins-biodynamiques-au-domaine-du-lendemain"
+          }
         },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 42.6217,
-          "longitude": 2.7639
-        },
-        "isPartOf": {
+        {
           "@type": "Winery",
+          "@id": "https://domainedulendemain.com/#winery",
           "name": "Domaine du Lendemain",
-          "url": "https://domainedulendemain.com/"
+          "url": "https://domainedulendemain.com/",
+          "telephone": "+33-6-85-82-04-52",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "102 Route de Trouillas",
+            "postalCode": "66300",
+            "addressLocality": "Fourques",
+            "addressRegion": "Pyrénées-Orientales",
+            "addressCountry": "FR"
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": 42.6217, "longitude": 2.7639 }
         },
-        "offers": {
-          "@type": "Offer",
-          "price": "15.00",
-          "priceCurrency": "EUR",
-          "availability": "https://schema.org/InStock",
-          "url": "https://domainedulendemain.com/visites/#reservation",
-          "validFrom": "2026-01-01"
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://domainedulendemain.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Visites & dégustations", "item": "https://domainedulendemain.com/visites/" }
+          ]
         }
-      }
-    </script>
+      ]
+    }
+  </script>
 </body>
 
 </html>

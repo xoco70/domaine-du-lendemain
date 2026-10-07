@@ -14,9 +14,10 @@
     <title>Domaine du Lendemain — Vins biodynamiques en Roussillon</title>
     <meta
       name="description"
-      content="Domaine du Lendemain à Fourques, Roussillon. Vins biodynamiques issus de très vieilles vignes (Grenache 1900, Carignan, Lledoner pelut). Visites & dégustations sur les Aspres."
+      content="Vins biodynamiques à Fourques (Roussillon) : très vieilles vignes de Grenache 1900, Carignan et Lledoner pelut. Visites et dégustations dans les Aspres."
     />
     <meta name="author" content="Mireille Ribière" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://domainedulendemain.com/" />
 
     <meta property="og:type" content="website" />
@@ -25,52 +26,23 @@
       property="og:description"
       content="Vigneronne & Herbaliste à Fourques. Vins libres, vieilles vignes, biodynamie sur le terroir des Aspres."
     />
-    <meta property="og:image" content="img/hero.webp" />
+    <meta property="og:image" content="https://domainedulendemain.com/img/hero.webp" />
+    <meta property="og:image:width" content="2400" />
+    <meta property="og:image:height" content="1800" />
+    <meta property="og:image:alt" content="Lumière matinale dans les vignes du Domaine du Lendemain" />
     <meta property="og:locale" content="fr_FR" />
+    <meta property="og:url" content="https://domainedulendemain.com/" />
+    <meta property="og:site_name" content="Domaine du Lendemain" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&family=Raleway:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              terre: {
-                50: "#faf7f1",
-                100: "#f1ebe0",
-                200: "#e7dfd4",
-                300: "#d4c4b0",
-                400: "#b59880",
-                500: "#9a7758",
-                600: "#7a5638",
-                700: "#5a4028",
-                800: "#3d2c1c",
-                900: "#22180f",
-              },
-              vigne: {
-                400: "#a8693a",
-                500: "#8a4f2a",
-                600: "#6b3b1f",
-              },
-              feuille: {
-                500: "#6b7a4f",
-                600: "#525e3c",
-              },
-            },
-            fontFamily: {
-              serif: ['"Averia Serif Libre"', "Georgia", "serif"],
-              sans: ['"Raleway"', "system-ui", "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
+    <link rel="stylesheet" href="/assets/site.css" />
 
     <style>
       html {
@@ -166,7 +138,7 @@
             src="logo-domaine-du-lendemain.jpg"
             alt="Domaine du Lendemain"
             class="h-10 w-10 rounded-full object-cover border border-terre-300"
-          />
+          width="710" height="564" />
           <span class="serif text-terre-700 text-xl leading-tight">
             Domaine du Lendemain
           </span>
@@ -187,7 +159,7 @@
             </div>
           </div>
           <a href="#rencontrer" class="nav-link">Nous Rencontrer</a>
-          <a href="./visites/index.html" class="nav-link">Visites &amp; Dégustations</a>
+          <a href="/visites/" class="nav-link">Visites &amp; Dégustations</a>
           <a
             href="https://commande.kuupanda.com/producteur/4079/particulier"
             target="_blank"
@@ -246,7 +218,7 @@
         src="img/hero.webp"
         alt="Lumière matinale dans les vignes du Domaine du Lendemain"
         class="absolute inset-0 w-full h-full object-cover"
-      />
+          width="2400" height="1800" fetchpriority="high" />
       <div
         class="absolute inset-0 bg-gradient-to-b from-terre-900/45 via-terre-900/20 to-terre-900/70"
       ></div>
@@ -254,9 +226,9 @@
         <p class="uppercase tracking-[0.4em] text-xs md:text-sm mb-6 opacity-90 leading-relaxed">
           Vigneronne &amp; Herbaliste<br />Roussillon
         </p>
-        <p class="serif text-4xl md:text-6xl mb-4 leading-tight">
+        <h1 class="serif text-4xl md:text-6xl mb-4 leading-tight">
           Vins Naturellement Bio
-        </p>
+        </h1>
         <p class="text-sm md:text-base mb-10 text-terre-200 max-w-xl mx-auto">
           Au service de la nature pour des vins vivants depuis 2018.
         </p>
@@ -288,13 +260,13 @@
 
     <!-- IDENTITÉ -->
     <section class="bg-terre-50 py-14 px-5 border-b border-terre-200">
-      <h1 class="fade-in m-0">
+      <div class="fade-in m-0">
         <img
           src="img/logo-signature.webp"
           alt="Domaine du Lendemain — Mireille Ribière, Vigneronne & Herbaliste"
           class="w-full max-w-[560px] h-auto mx-auto"
-        />
-      </h1>
+          width="943" height="264" loading="lazy" decoding="async" />
+      </div>
     </section>
 
     <!-- LE DOMAINE -->
@@ -333,7 +305,7 @@
               src="img/famille-ribiere.webp"
               alt="La famille Ribière au Domaine du Lendemain"
               class="rounded-lg shadow-xl border border-terre-200 w-full"
-            />
+          width="1600" height="1600" loading="lazy" decoding="async" />
             <div
               class="hidden md:block absolute -bottom-6 -left-6 bg-terre-700 text-terre-50 px-5 py-3 rounded text-sm serif italic"
             >
@@ -445,22 +417,22 @@
               src="img/aspres1.webp"
               alt="Paysage des Aspres"
               class="rounded-lg w-full h-48 md:h-64 object-cover border border-terre-300"
-            />
+          width="1800" height="1195" loading="lazy" decoding="async" />
             <img
               src="img/aspres2.webp"
               alt="Collines des Aspres en Roussillon"
               class="rounded-lg w-full h-48 md:h-64 object-cover border border-terre-300 mt-6"
-            />
+          width="1800" height="1195" loading="lazy" decoding="async" />
             <img
               src="img/aspres3.webp"
               alt="Vignes au pied des Pyrénées"
               class="rounded-lg w-full h-48 md:h-64 object-cover border border-terre-300"
-            />
+          width="1800" height="1195" loading="lazy" decoding="async" />
             <img
               src="img/petit-matin.webp"
               alt="Petit matin sur le domaine"
               class="rounded-lg w-full h-48 md:h-64 object-cover border border-terre-300 mt-6"
-            />
+          width="1800" height="1350" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -521,7 +493,7 @@
             src="img/vignes.webp"
             alt="Vignes en gobelet sur le Domaine du Lendemain"
             class="rounded-lg w-full h-72 md:h-96 object-cover border border-terre-200"
-          />
+          width="1800" height="1350" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
@@ -601,9 +573,12 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-4 mt-12 fade-in">
-          <img src="img/engag-1.webp" alt="Cuves œuf pour des élevages en douceur" class="rounded-lg w-full h-56 object-cover" />
-          <img src="img/engag-2.webp" alt="Mise en bouteille au domaine" class="rounded-lg w-full h-56 object-cover" />
-          <img src="img/engag-3.webp" alt="Bruno et Mireille Ribière au domaine" class="rounded-lg w-full h-56 object-cover" />
+          <img src="img/engag-1.webp" alt="Cuves œuf pour des élevages en douceur" class="rounded-lg w-full h-56 object-cover"
+          width="1600" height="2134" loading="lazy" decoding="async" />
+          <img src="img/engag-2.webp" alt="Mise en bouteille au domaine" class="rounded-lg w-full h-56 object-cover"
+          width="1600" height="1201" loading="lazy" decoding="async" />
+          <img src="img/engag-3.webp" alt="Bruno et Mireille Ribière au domaine" class="rounded-lg w-full h-56 object-cover"
+          width="1600" height="2134" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
@@ -634,7 +609,7 @@
             <a
               href="https://vinyaqui.com/activities/visite-dans-les-vignes-et-degustation-de-vins-biodynamiques-au-domaine-du-lendemain"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="text-xs text-terre-500 hover:text-terre-700 underline underline-offset-4"
             >
               Réservation propulsée par Viny'aquí
@@ -646,7 +621,7 @@
             src="img/vignes.webp"
             alt="Vignes en gobelet sur le terroir des Aspres"
             class="rounded-lg w-full h-full max-h-[420px] object-cover border border-terre-200"
-          />
+          width="1800" height="1350" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
@@ -705,7 +680,8 @@
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 fade-in">
             <article class="bg-terre-50 border border-terre-200 rounded-xl overflow-hidden flex flex-col hover:shadow-lg transition">
               <div class="bg-white p-4 flex items-center justify-center">
-                <img src="img/cuvee-brin-dille.webp" alt="Étiquette de la cuvée Brin d'Ille — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy" />
+                <img src="img/cuvee-brin-dille.webp" alt="Étiquette de la cuvée Brin d'Ille — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy"
+          width="1000" height="885" />
               </div>
               <div class="p-6 flex-1 flex flex-col">
                 <div class="text-xs uppercase tracking-widest text-terre-500 mb-1">IGP Côtes Catalanes Blanc</div>
@@ -723,7 +699,8 @@
 
             <article class="bg-terre-50 border border-terre-200 rounded-xl overflow-hidden flex flex-col hover:shadow-lg transition">
               <div class="bg-white p-4 flex items-center justify-center">
-                <img src="img/cuvee-filou-du-jour.webp" alt="Étiquette de la cuvée Filou du Jour — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy" />
+                <img src="img/cuvee-filou-du-jour.webp" alt="Étiquette de la cuvée Filou du Jour — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy"
+          width="1000" height="1038" />
               </div>
               <div class="p-6 flex-1 flex flex-col">
                 <div class="text-xs uppercase tracking-widest text-terre-500 mb-1">IGP Côtes Catalanes Rosé</div>
@@ -737,7 +714,8 @@
 
             <article class="bg-terre-50 border border-terre-200 rounded-xl overflow-hidden flex flex-col hover:shadow-lg transition">
               <div class="bg-white p-4 flex items-center justify-center">
-                <img src="img/cuvee-petit-bourgeon.webp" alt="Étiquette de la cuvée Petit Bourgeon — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy" />
+                <img src="img/cuvee-petit-bourgeon.webp" alt="Étiquette de la cuvée Petit Bourgeon — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy"
+          width="1000" height="1056" />
               </div>
               <div class="p-6 flex-1 flex flex-col">
                 <div class="text-xs uppercase tracking-widest text-terre-500 mb-1">IGP Côtes Catalanes Rouge</div>
@@ -757,7 +735,8 @@
 
             <article class="bg-terre-50 border border-terre-200 rounded-xl overflow-hidden flex flex-col hover:shadow-lg transition">
               <div class="bg-white p-4 flex items-center justify-center">
-                <img src="img/cuvee-jeune-pousse.webp" alt="Étiquette de la cuvée Jeune Pousse — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy" />
+                <img src="img/cuvee-jeune-pousse.webp" alt="Étiquette de la cuvée Jeune Pousse — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy"
+          width="1000" height="1007" />
               </div>
               <div class="p-6 flex-1 flex flex-col">
                 <div class="text-xs uppercase tracking-widest text-terre-500 mb-1">IGP Côtes Catalanes Blanc</div>
@@ -777,7 +756,8 @@
 
             <article class="bg-terre-50 border border-terre-200 rounded-xl overflow-hidden flex flex-col hover:shadow-lg transition">
               <div class="bg-white p-4 flex items-center justify-center">
-                <img src="img/cuvee-bouquet-boheme.webp" alt="Étiquette de la cuvée Bouquet Bohème — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy" />
+                <img src="img/cuvee-bouquet-boheme.webp" alt="Étiquette de la cuvée Bouquet Bohème — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy"
+          width="1000" height="1000" />
               </div>
               <div class="p-6 flex-1 flex flex-col">
                 <div class="text-xs uppercase tracking-widest text-terre-500 mb-1">IGP Côtes Catalanes Rouge</div>
@@ -795,7 +775,8 @@
 
             <article class="bg-terre-50 border border-terre-200 rounded-xl overflow-hidden flex flex-col hover:shadow-lg transition">
               <div class="bg-white p-4 flex items-center justify-center">
-                <img src="img/cuvee-les-centenaires.webp" alt="Étiquette de la cuvée Les Centenaires — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy" />
+                <img src="img/cuvee-les-centenaires.webp" alt="Étiquette de la cuvée Les Centenaires — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy"
+          width="1000" height="851" />
               </div>
               <div class="p-6 flex-1 flex flex-col">
                 <div class="text-xs uppercase tracking-widest text-terre-500 mb-1">IGP Côtes Catalanes Rouge</div>
@@ -818,7 +799,8 @@
 
             <article class="bg-terre-50 border border-terre-200 rounded-xl overflow-hidden flex flex-col hover:shadow-lg transition">
               <div class="bg-white p-4 flex items-center justify-center">
-                <img src="img/cuvee-genese.webp" alt="Étiquette de la cuvée Genèse — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy" />
+                <img src="img/cuvee-genese.webp" alt="Étiquette de la cuvée Genèse — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy"
+          width="1000" height="957" />
               </div>
               <div class="p-6 flex-1 flex flex-col">
                 <div class="text-xs uppercase tracking-widest text-terre-500 mb-1">IGP Côtes Catalanes Rouge</div>
@@ -842,7 +824,8 @@
 
             <article class="bg-terre-50 border border-terre-200 rounded-xl overflow-hidden flex flex-col hover:shadow-lg transition">
               <div class="bg-white p-4 flex items-center justify-center">
-                <img src="img/cuvee-el-pelut.webp" alt="Étiquette de la cuvée El Pelut — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy" />
+                <img src="img/cuvee-el-pelut.webp" alt="Étiquette de la cuvée El Pelut — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy"
+          width="1000" height="1063" />
               </div>
               <div class="p-6 flex-1 flex flex-col">
                 <div class="text-xs uppercase tracking-widest text-terre-500 mb-1">IGP Côtes Catalanes Rouge</div>
@@ -863,7 +846,8 @@
 
             <article class="bg-terre-50 border border-terre-200 rounded-xl overflow-hidden flex flex-col hover:shadow-lg transition">
               <div class="bg-white p-4 flex items-center justify-center">
-                <img src="img/cuvee-aura-libre.webp" alt="Étiquette de la cuvée Aura Libre — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy" />
+                <img src="img/cuvee-aura-libre.webp" alt="Étiquette de la cuvée Aura Libre — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy"
+          width="1000" height="1018" />
               </div>
               <div class="p-6 flex-1 flex flex-col">
                 <div class="text-xs uppercase tracking-widest text-terre-500 mb-1">IGP Côtes Catalanes Rouge</div>
@@ -887,7 +871,8 @@
 
             <article class="bg-terre-50 border border-terre-200 rounded-xl overflow-hidden flex flex-col hover:shadow-lg transition">
               <div class="bg-white p-4 flex items-center justify-center">
-                <img src="img/cuvee-pied-dargile.webp" alt="Étiquette de la cuvée Pied d'Argile — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy" />
+                <img src="img/cuvee-pied-dargile.webp" alt="Étiquette de la cuvée Pied d'Argile — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy"
+          width="1000" height="1047" />
               </div>
               <div class="p-6 flex-1 flex flex-col">
                 <div class="text-xs uppercase tracking-widest text-terre-500 mb-1">IGP Côtes Catalanes Rouge</div>
@@ -903,7 +888,8 @@
 
             <article class="bg-terre-50 border border-terre-200 rounded-xl overflow-hidden flex flex-col hover:shadow-lg transition">
               <div class="bg-white p-4 flex items-center justify-center">
-                <img src="img/cuvee-terre-etoiles-rouge.webp" alt="Étiquette de la cuvée Terre d'Étoiles, Côtes du Roussillon — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy" />
+                <img src="img/cuvee-terre-etoiles-rouge.webp" alt="Étiquette de la cuvée Terre d'Étoiles, Côtes du Roussillon — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy"
+          width="1000" height="943" />
               </div>
               <div class="p-6 flex-1 flex flex-col">
                 <div class="text-xs uppercase tracking-widest text-terre-500 mb-1">AOP Côtes du Roussillon Rouge</div>
@@ -917,7 +903,8 @@
 
             <article class="bg-terre-50 border border-terre-200 rounded-xl overflow-hidden flex flex-col hover:shadow-lg transition">
               <div class="bg-white p-4 flex items-center justify-center">
-                <img src="img/cuvee-terre-etoiles-muscat.webp" alt="Étiquette de la cuvée Terre d'Étoiles, Muscat de Rivesaltes — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy" />
+                <img src="img/cuvee-terre-etoiles-muscat.webp" alt="Étiquette de la cuvée Terre d'Étoiles, Muscat de Rivesaltes — Domaine du Lendemain" class="w-full h-56 object-contain" loading="lazy"
+          width="1000" height="873" />
               </div>
               <div class="p-6 flex-1 flex flex-col">
                 <div class="text-xs uppercase tracking-widest text-terre-500 mb-1">AOP Muscat de Rivesaltes</div>
@@ -976,7 +963,7 @@
                 src="img/huile-olive.webp"
                 alt="Huile d'olive du Domaine du Lendemain"
                 class="rounded-lg w-full h-72 md:h-80 object-cover border border-terre-200"
-              />
+          width="1200" height="1093" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -1001,7 +988,7 @@
               src="img/rencontrer.webp"
               alt="Rencontre au Domaine du Lendemain"
               class="rounded-lg w-full h-full max-h-[500px] object-cover border border-terre-200"
-            />
+          width="1600" height="2289" loading="lazy" decoding="async" />
           </div>
           <div class="fade-in flex flex-col justify-center">
             <h3 class="serif text-3xl text-terre-700 mb-4">
@@ -1091,45 +1078,45 @@
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 fade-in">
           <div class="bg-terre-50 border border-terre-200 rounded-lg p-6 hover:border-terre-600 transition">
-            <h3 class="serif text-xl text-terre-700 mb-2">
+            <p class="serif text-xl text-terre-700 mb-2">
               <a href="https://vinyaqui.com/activities/visite-dans-les-vignes-et-degustation-de-vins-biodynamiques-au-domaine-du-lendemain" target="_blank" rel="noopener" class="hover:text-terre-800">Viny'aquí</a>
-            </h3>
+            </p>
             <p class="text-sm text-terre-600">Réservations de visites & dégustations</p>
           </div>
           <div class="bg-terre-50 border border-terre-200 rounded-lg p-6 hover:border-terre-600 transition">
-            <h3 class="serif text-xl text-terre-700 mb-2">
+            <p class="serif text-xl text-terre-700 mb-2">
               <a href="https://www.facebook.com/leclandepona/" target="_blank" rel="noopener" class="hover:text-terre-800">Clan d'Épona</a>
-            </h3>
+            </p>
             <p class="text-sm text-terre-600">Ressource amendement organique (fumier…)</p>
           </div>
           <div class="bg-terre-50 border border-terre-200 rounded-lg p-6 hover:border-terre-600 transition">
-            <h3 class="serif text-xl text-terre-700 mb-2">
+            <p class="serif text-xl text-terre-700 mb-2">
               <a href="https://raisonance-cosmetiques.fr/" target="_blank" rel="noopener" class="hover:text-terre-800">Raisonance</a>
-            </h3>
+            </p>
             <p class="text-sm text-terre-600">Cosmétiques sensoriels issus des marcs de raisins du domaine</p>
           </div>
           <div class="bg-terre-50 border border-terre-200 rounded-lg p-6 hover:border-terre-600 transition">
-            <h3 class="serif text-xl text-terre-700 mb-2">
+            <p class="serif text-xl text-terre-700 mb-2">
               <a href="https://www.facebook.com/amaplespoucesvertsdesaspres" target="_blank" rel="noopener" class="hover:text-terre-800">Les Pouces verts des Aspres</a>
-            </h3>
+            </p>
             <p class="text-sm text-terre-600">AMAP & événements</p>
           </div>
           <div class="bg-terre-50 border border-terre-200 rounded-lg p-6 hover:border-terre-600 transition">
-            <h3 class="serif text-xl text-terre-700 mb-2">
+            <p class="serif text-xl text-terre-700 mb-2">
               <a href="https://energiecitoyenne66po.wordpress.com/" target="_blank" rel="noopener" class="hover:text-terre-800">Énergie citoyenne</a>
-            </h3>
+            </p>
             <p class="text-sm text-terre-600">AMAP</p>
           </div>
           <div class="bg-terre-50 border border-terre-200 rounded-lg p-6 hover:border-terre-600 transition">
-            <h3 class="serif text-xl text-terre-700 mb-2">
+            <p class="serif text-xl text-terre-700 mb-2">
               <a href="https://www.instagram.com/grainderaisin81" target="_blank" rel="noopener" class="hover:text-terre-800">Le Grain de Raisin</a>
-            </h3>
+            </p>
             <p class="text-sm text-terre-600">Atelier de dégustation</p>
           </div>
           <div class="bg-terre-50 border border-terre-200 rounded-lg p-6 hover:border-terre-600 transition">
-            <h3 class="serif text-xl text-terre-700 mb-2">
+            <p class="serif text-xl text-terre-700 mb-2">
               <a href="https://park4night.com/" target="_blank" rel="noopener" class="hover:text-terre-800">park4night</a>
-            </h3>
+            </p>
             <p class="text-sm text-terre-600">Stationnement camping-car en pleine nature</p>
           </div>
         </div>
@@ -1167,7 +1154,7 @@
               src="logo-domaine-du-lendemain.jpg"
               alt=""
               class="h-12 w-12 rounded-full object-cover border border-terre-600"
-            />
+          width="710" height="564" loading="lazy" decoding="async" />
             <span class="serif text-2xl text-terre-50">Domaine du Lendemain</span>
           </div>
           <p class="text-sm text-terre-300 leading-relaxed">
@@ -1175,7 +1162,7 @@
           </p>
         </div>
         <div>
-          <h4 class="serif text-lg text-terre-50 mb-3">Contact</h4>
+          <p class="serif text-lg text-terre-50 mb-3">Contact</p>
           <p class="text-sm leading-relaxed">
             102 Route de Trouillas<br />66300 Fourques<br />
             <a href="tel:+33685820452" class="hover:text-terre-50">06 85 82 04 52</a><br />
@@ -1185,7 +1172,7 @@
           </p>
         </div>
         <div>
-          <h4 class="serif text-lg text-terre-50 mb-3">Suivez-nous</h4>
+          <p class="serif text-lg text-terre-50 mb-3">Suivez-nous</p>
           <div class="flex gap-4">
             <a
               href="https://www.instagram.com/domainedulendemain/"
@@ -1246,8 +1233,9 @@
       {
         "@context": "https://schema.org",
         "@type": "Winery",
+        "@id": "https://domainedulendemain.com/#winery",
         "name": "Domaine du Lendemain",
-        "founder": "Mireille Ribière",
+        "founder": { "@type": "Person", "name": "Mireille Ribière", "jobTitle": "Vigneronne & Herbaliste" },
         "url": "https://domainedulendemain.com/",
         "logo": "https://domainedulendemain.com/logo-domaine-du-lendemain.jpg",
         "image": "https://domainedulendemain.com/img/hero.webp",
@@ -1261,6 +1249,12 @@
           "addressLocality": "Fourques",
           "addressRegion": "Pyrénées-Orientales",
           "addressCountry": "FR"
+        },
+        "areaServed": ["Aspres", "Roussillon", "Pyrénées-Orientales"],
+        "makesOffer": {
+          "@type": "Offer",
+          "itemOffered": { "@type": "TouristTrip", "@id": "https://domainedulendemain.com/visites/#visite" },
+          "url": "https://domainedulendemain.com/visites/"
         },
         "sameAs": [
           "https://www.instagram.com/domainedulendemain/",

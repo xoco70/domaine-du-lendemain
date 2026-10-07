@@ -1,0 +1,13 @@
+{
+  "name": "domaine-du-lendemain",
+  "private": true,
+  "description": "Site statique du Domaine du Lendemain (HTML + Tailwind CSS)",
+  "scripts": {
+    "build": "tailwindcss -i src/input.css -o assets/site.css --minify",
+    "watch": "tailwindcss -i src/input.css -o assets/site.css --watch",
+    "serve": "python3 -m http.server 8080"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
