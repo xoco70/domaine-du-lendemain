@@ -150,16 +150,17 @@
 <body class="bg-terre-100 text-terre-800">
   <!-- NAV -->
   <header class="fixed top-0 left-0 right-0 z-50 bg-terre-50/85 backdrop-blur border-b border-terre-200">
-    <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-3">
+    <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 shrink-0">
         <img src="/logo-domaine-du-lendemain.jpg" alt="Domaine du Lendemain"
           class="h-10 w-10 rounded-full object-cover border border-terre-300"
           width="710" height="564" />
-        <span class="serif text-terre-700 text-xl leading-tight">
+        <span class="serif text-terre-700 text-xl leading-tight whitespace-nowrap">
           Domaine du Lendemain
         </span>
       </a>
-      <nav class="hidden lg:flex items-center gap-7 text-sm tracking-wide text-terre-700">
+      <div class="flex items-center gap-4 xl:gap-4 ml-4">
+        <nav class="hidden xl:flex items-center gap-4 text-sm whitespace-nowrap tracking-wide text-terre-700">
         <a href="/#domaine" class="nav-link">Le Domaine</a>
         <a href="/#engagements" class="nav-link">Nos Engagements</a>
         <div class="relative group">
@@ -181,14 +182,16 @@
         <a href="https://commande.kuupanda.com/producteur/4079/particulier" target="_blank" rel="noopener"
           class="bg-terre-600 hover:bg-terre-700 text-terre-50 px-4 py-2 rounded-full transition">Boutique</a>
       </nav>
-      <button id="mobile-toggle" class="lg:hidden text-terre-700" aria-label="Menu">
+        <nav aria-label="undefined"><ul class="flex items-center gap-0.5 text-xs font-semibold tracking-wider text-terre-700"><li><a href="/" hreflang="fr" lang="fr" title="Français" class="block px-2 py-1 rounded-full transition hover:bg-terre-200">FR</a></li><li><a href="/en/" hreflang="en" lang="en" title="English" class="block px-2 py-1 rounded-full transition hover:bg-terre-200">EN</a></li><li><a href="/es/" hreflang="es" lang="es" title="Español" class="block px-2 py-1 rounded-full transition hover:bg-terre-200">ES</a></li><li><a href="/ca/" hreflang="ca" lang="ca" title="Català" class="block px-2 py-1 rounded-full transition hover:bg-terre-200">CA</a></li></ul></nav>
+        <button id="mobile-toggle" class="xl:hidden text-terre-700" aria-label="Menu">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
+      </div>
     </div>
     <div id="mobile-menu"
-      class="hidden lg:hidden bg-terre-50 border-t border-terre-200 px-5 py-4 space-y-3 text-terre-700">
+      class="hidden xl:hidden bg-terre-50 border-t border-terre-200 px-5 py-4 space-y-3 text-terre-700">
       <a href="/#domaine" class="block">Le Domaine</a>
       <a href="/#engagements" class="block">Nos Engagements</a>
       <a href="/#vins" class="block">Nos Vins</a>
@@ -288,6 +291,41 @@
     document.querySelectorAll(".fade-in").forEach((el) => io.observe(el));
   </script>
 
+
+  <script>
+    (function () {
+      var m = location.pathname.match(/^\/(en|es|ca)(\/|$)/);
+      if (!m) return;
+      var lang = m[1], i = { en: 0, es: 1, ca: 2 }[lang];
+      var P = {"en":{"home":"/en/","visits":"/en/visits/"},"es":{"home":"/es/","visits":"/es/visitas/"},"ca":{"home":"/ca/","visits":"/ca/visites/"}};
+      var T = {"Page introuvable · Domaine du Lendemain":["Page not found · Domaine du Lendemain","Página no encontrada · Domaine du Lendemain","Pàgina no trobada · Domaine du Lendemain"],"Cette page n'existe pas ou a changé d'adresse.":["This page does not exist or has moved.","Esta página no existe o ha cambiado de dirección.","Aquesta pàgina no existeix o ha canviat d'adreça."],"Erreur 404":["Error 404","Error 404","Error 404"],"Page introuvable":["Page not found","Página no encontrada","Pàgina no trobada"],"Retour à l'accueil":["Back to home","Volver al inicio","Tornar a l'inici"],"Le Domaine":["The Estate","La Finca","La Finca"],"Nos Engagements":["Our Commitments","Nuestros Compromisos","Els Nostres Compromisos"],"Nos Produits":["Our Products","Nuestros Productos","Els Nostres Productes"],"Nos Vins":["Our Wines","Nuestros Vinos","Els Nostres Vins"],"Notre Huile d'olive":["Our Olive Oil","Nuestro Aceite de Oliva","El Nostre Oli d'Oliva"],"Nous Rencontrer":["Meet Us","Conócenos","Coneix-nos"],"Visites & Dégustations":["Tours & Tastings","Visitas y Catas","Visites i Tastos"],"Visites & dégustations":["Tours & tastings","Visitas y catas","Visites i tastos"],"Boutique":["Shop","Tienda","Botiga"],"Boutique en ligne →":["Online shop →","Tienda en línea →","Botiga en línia →"],"Vins biodynamiques sur le terroir des Aspres — Catalogne Nord.":["Biodynamic wines on the terroir of the Aspres — Northern Catalonia.","Vinos biodinámicos en el terroir de los Aspres — Cataluña Norte.","Vins biodinàmics al terrer dels Aspres — Catalunya Nord."],"Contact":["Contact","Contacto","Contacte"],"Suivez-nous":["Follow us","Síguenos","Segueix-nos"],"Les Aspres · Roussillon · Catalogne Nord":["The Aspres · Roussillon · Northern Catalonia","Los Aspres · Rosellón · Cataluña Norte","Els Aspres · Rosselló · Catalunya Nord"]};
+      document.documentElement.lang = lang;
+      document.title = T["Page introuvable · Domaine du Lendemain"][i];
+      var d = document.querySelector('meta[name="description"]');
+      if (d) d.content = T["Cette page n'existe pas ou a changé d'adresse."][i];
+      var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      var n;
+      while ((n = w.nextNode())) {
+        var k = n.nodeValue.replace(/\s+/g, " ").trim();
+        if (T[k] && !n.parentNode.closest("script")) n.nodeValue = n.nodeValue.replace(n.nodeValue.trim(), T[k][i]);
+      }
+      document.querySelectorAll("header a[href^='/'], main a[href^='/']").forEach(function (a) {
+        var h = a.getAttribute("href");
+        if (/^\/(en|es|ca)\//.test(h) || h.indexOf("/img") === 0) return;
+        if (h === "/visites/") a.setAttribute("href", P[lang].visits);
+        else if (h === "/") a.setAttribute("href", P[lang].home);
+        else if (h.indexOf("/#") === 0) a.setAttribute("href", P[lang].home + h.slice(1));
+      });
+      document.querySelectorAll("header nav[aria-label] a").forEach(function (a) {
+        var on = a.lang === lang;
+        a.classList.toggle("bg-terre-600", on);
+        a.classList.toggle("text-terre-50", on);
+        a.classList.toggle("hover:bg-terre-200", !on);
+        if (on) a.setAttribute("aria-current", "true");
+      });
+      document.querySelector("header nav[aria-label]").setAttribute("aria-label", { en: "Language", es: "Idioma", ca: "Llengua" }[lang]);
+    })();
+  </script>
 </body>
 
 </html>

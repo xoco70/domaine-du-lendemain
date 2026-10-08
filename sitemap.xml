@@ -1,5 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://domainedulendemain.com/</loc><lastmod>2026-10-07</lastmod></url>
-  <url><loc>https://domainedulendemain.com/visites/</loc><lastmod>2026-10-07</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://domainedulendemain.com/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domainedulendemain.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://domainedulendemain.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://domainedulendemain.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://domainedulendemain.com/ca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://domainedulendemain.com/"/>
+  </url>
+  <url>
+    <loc>https://domainedulendemain.com/en/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domainedulendemain.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://domainedulendemain.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://domainedulendemain.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://domainedulendemain.com/ca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://domainedulendemain.com/"/>
+  </url>
+  <url>
+    <loc>https://domainedulendemain.com/es/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domainedulendemain.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://domainedulendemain.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://domainedulendemain.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://domainedulendemain.com/ca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://domainedulendemain.com/"/>
+  </url>
+  <url>
+    <loc>https://domainedulendemain.com/ca/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domainedulendemain.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://domainedulendemain.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://domainedulendemain.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://domainedulendemain.com/ca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://domainedulendemain.com/"/>
+  </url>
+  <url>
+    <loc>https://domainedulendemain.com/visites/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domainedulendemain.com/visites/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://domainedulendemain.com/en/visits/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://domainedulendemain.com/es/visitas/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://domainedulendemain.com/ca/visites/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://domainedulendemain.com/visites/"/>
+  </url>
+  <url>
+    <loc>https://domainedulendemain.com/en/visits/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domainedulendemain.com/visites/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://domainedulendemain.com/en/visits/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://domainedulendemain.com/es/visitas/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://domainedulendemain.com/ca/visites/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://domainedulendemain.com/visites/"/>
+  </url>
+  <url>
+    <loc>https://domainedulendemain.com/es/visitas/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domainedulendemain.com/visites/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://domainedulendemain.com/en/visits/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://domainedulendemain.com/es/visitas/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://domainedulendemain.com/ca/visites/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://domainedulendemain.com/visites/"/>
+  </url>
+  <url>
+    <loc>https://domainedulendemain.com/ca/visites/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domainedulendemain.com/visites/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://domainedulendemain.com/en/visits/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://domainedulendemain.com/es/visitas/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://domainedulendemain.com/ca/visites/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://domainedulendemain.com/visites/"/>
+  </url>
 </urlset>
